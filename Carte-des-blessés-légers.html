@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html style="font-size: 16px;">
+  <head>
+     
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="./css_2/main.css" />
+
+             
+    <style type="text/css">
+      
+      #nav > ul > li a {
+       
+        padding: 0em;
+       
+      }
+
+
+
+
+
+    </style>
+<link rel="stylesheet" href="css_2/leaflet.css" />
+  <script data-require="jquery@*" data-semver="2.1.4" src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script src="js_2/leaflet.js"></script>
+  <script type="text/javascript">
+  var ind=0;
+</script>
+
+  <style>
+    #map {
+      width: 800px;
+      height: 580px;
+      margin-left: 380px;
+    }
+    .info {
+        padding: 3px 3px;
+        font: 12px/15px Candara, Italic , sans-serif;
+        background:#6baed6;
+        background: rgba(255,255,255,0,8);
+        box-shadow: 2 2 15px rgba(0,0,0,0.2);
+        border-radius: 10px;
+    }
+    .info h4 {
+        margin: 2 2 40px;
+        color: #000000;
+        .legend {
+    line-height: 18px;
+    color: #555;
+}
+    .legend {
+    line-height: 18px;
+    color: #555;
+}
+    
+.legend i {
+    width: 18px;
+    height: 18px;
+    float: left;
+    margin-right: 8px;
+    opacity: 0.7;
+}
+
+.info {
+    padding: 6px 8px;
+    font: 14px/16px Arial, Helvetica, sans-serif;
+    background: white;
+    background: rgba(255,255,255,0.8);
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    border-radius: 5px;
+}
+
+.info h5 {
+    margin: 0 0 5px;
+    color: #777;
+}
+  </style>
+
+  
+  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content="GEOPORTAIL DES ACCIDENTS ROUTIERS AU MAROC (2019-2021)">
+    <meta name="description" content="">
+    <meta name="page_type" content="np-template-header-footer-from-plugin">
+    <title>Carte des blessés légers</title>
+    <link rel="stylesheet" href="nicepage.css" media="screen">
+<link rel="stylesheet" href="Carte-des-blessés-légers.css" media="screen">
+    <script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>
+    <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script>
+    <meta name="generator" content="Nicepage 4.5.4, nicepage.com">
+    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
+    
+    
+    
+    <script type="application/ld+json">{
+		"@context": "http://schema.org",
+		"@type": "Organization",
+		"name": ""
+}</script>
+    <meta name="theme-color" content="#478ac9">
+    <meta property="og:title" content="Carte des blessés légers">
+    <meta property="og:type" content="website">
+  </head>
+  <body class="u-body u-xl-mode"><header class=" u-header u-section-row-container" id="sec-abc8" data-animation-name="" data-animation-duration="0" data-animation-delay="0" data-animation-direction=""><div class="u-section-rows">
+        <div class="u-gradient u-section-row u-section-row-1" id="sec-abf3">
+          <div class="u-clearfix u-sheet u-sheet-1">
+            <img class="u-align-left u-image u-image-default u-preserve-proportions u-image-1" src="images/iav.jfif" alt="" data-image-width="175" data-image-height="168">
+            <img class="u-align-right u-image u-image-default u-image-2" src="images/esigt.jpg" alt="" data-image-width="525" data-image-height="523">
+            <h1 class="u-align-center u-text u-text-1">GEOPORTAIL DES ACCIDENTS ROUTIERS AU MAROC (2019-2021)</h1>
+          </div>
+          
+          
+          
+          
+          
+        </div>
+        <div class="u-black u-section-row u-section-row-2" data-animation-name="" data-animation-duration="0" data-animation-delay="0" data-animation-direction="" id="sec-a351">
+          <div class="u-align-left u-clearfix u-sheet u-valign-middle u-sheet-2">
+            <nav class="u-menu u-menu-dropdown u-offcanvas u-menu-1">
+              <div class="menu-collapse" style="font-size: 1.25rem; letter-spacing: 0px; font-weight: 700; text-transform: uppercase;">
+                <a class="u-button-style u-custom-active-border-color u-custom-border u-custom-border-color u-custom-borders u-custom-hover-border-color u-custom-left-right-menu-spacing u-custom-padding-bottom u-custom-text-active-color u-custom-text-color u-custom-text-hover-color u-custom-top-bottom-menu-spacing u-nav-link" href="#" style="padding: 0px; font-size: calc(1em + 0.5px);">
+                  <svg class="u-svg-link" viewBox="0 0 24 24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-f881"></use></svg>
+                  <svg class="u-svg-content" version="1.1" id="svg-f881" viewBox="0 0 16 16" x="0px" y="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"><g><rect y="1" width="16" height="2"></rect><rect y="7" width="16" height="2"></rect><rect y="13" width="16" height="2"></rect>
+</g></svg>
+                </a>
+              </div>
+              <div class="u-custom-menu u-nav-container">
+                <ul class="u-nav u-spacing-30 u-unstyled u-nav-1"><li class="u-nav-item"><a class="u-border-2 u-border-active-palette-1-base u-border-hover-palette-1-base u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-1-base u-text-white" href="Accueil.html" style="padding: 10px 0px;">Accueil</a>
+</li><li class="u-nav-item"><a class="u-border-2 u-border-active-palette-1-base u-border-hover-palette-1-base u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-1-base u-text-white" style="padding: 10px 0px;">Cartes</a><div class="u-nav-popup"><ul class="u-h-spacing-20 u-nav u-unstyled u-v-spacing-10 u-nav-2"><li class="u-nav-item"><a class="u-button-style u-nav-link u-white" href="Carte-des-décès.html">Carte des décès</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-white" href="Carte-des-blessés-graves.html">Carte des blessés graves</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-white" href="Carte-des-blessés-légers.html">Carte des blessés légers</a>
+</li></ul>
+</div>
+</li><li class="u-nav-item"><a class="u-border-2 u-border-active-palette-1-base u-border-hover-palette-1-base u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-1-base u-text-white" href="Donnees.html" style="padding: 10px 0px;">Donnees</a>
+</li><li class="u-nav-item"><a class="u-border-2 u-border-active-palette-1-base u-border-hover-palette-1-base u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-1-base u-text-white" href="Contact.html" style="padding: 10px 0px;">Contact</a>
+</li></ul>
+              </div>
+              <div class="u-custom-menu u-nav-container-collapse">
+                <div class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
+                  <div class="u-inner-container-layout u-sidenav-overflow">
+                    <div class="u-menu-close"></div>
+                    <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-3"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Accueil.html" style="padding: 10px 0px;">Accueil</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" style="padding: 10px 0px;">Cartes</a><div class="u-nav-popup"><ul class="u-h-spacing-20 u-nav u-unstyled u-v-spacing-10 u-nav-4"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Carte-des-décès.html">Carte des décès</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Carte-des-blessés-graves.html">Carte des blessés graves</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Carte-des-blessés-légers.html">Carte des blessés légers</a>
+</li></ul>
+</div>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Donnees.html" style="padding: 10px 0px;">Donnees</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Contact.html" style="padding: 10px 0px;">Contact</a>
+</li></ul>
+                  </div>
+                </div>
+                <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>
+              </div>
+            </nav>
+          </div>
+          
+          
+          
+          
+          
+        </div>
+      </div></header>
+    <section class="u-clearfix u-section-1" id="sec-a889">
+      <div class="u-clearfix u-sheet u-valign-middle u-sheet-1"><span class="u-file-icon u-icon u-icon-1"><img src="images/854901.png" alt=""></span>
+        <p class="u-align-center u-custom-font u-font-georgia u-text u-text-1"><span class="u-icon"></span>Carte <b>choroplèthe</b>&nbsp;de l'évolution des nombres de ​blessés
+légers pour
+les années 2019, 2020 et 2021 
+        </p>
+      </div>
+    </section>
+
+
+<section>
+  <body class="is-preload"  id='mymain' onload="setMap('2019')">
+    <div id="page-wrapper">
+
+
+      
+      <section class="wrapper style1" style="background-color:"#c7e9c0;>
+                   
+                         <div class="row">
+                          <div >
+                 <!-- Carousel items -->
+                 <div class="carousel-inner" style="margin-top: -3em">
+                   <div id='map' ></div>
+                 </div>
+              <!-- Carousel nav -->
+              <center><select onChange="setMap(this.value);">
+                  <option value="-" disabled selected>   Sélectionnez une date   </option>
+                  <option value="2019">2019</option>
+                  <option value="2020">2020</option>
+                  <option value="2021">2021</option>
+              </select> </i></center>
+              </div>
+                         </div>
+                        
+
+                        <div class="middle-column">
+            
+
+            </div>
+          </div>
+        </section>
+
+ 
+        </div>
+
+    </div>
+
+    <!-- Scripts -->
+      <script src="js_2/jquery.min.js"></script>
+      <script src="js_2/jquery.dropotron.min.js"></script>
+      <script src="js_2/browser.min.js"></script>
+      <script src="js_2/breakpoints.min.js"></script>
+      <script src="js_2/util.js"></script>
+      <script src="js_2/main.js"></script>
+<script type="text/javascript" src="js_2/blessures_legers_2019.js" id="button"></script>
+<script type="text/javascript" src="js_2/blessures_legers_2020.js" id="button"></script>
+<script type="text/javascript" src="js_2/blessures_legers_2021.js" id="button"></script>
+
+
+
+<script type="text/javascript">
+  
+
+function setMap(value)
+{
+  var blessures_legers;
+  switch (value) {
+    case '2019': blessures_legers=this.blessures_legers2019;ind++;break;
+    case '2020': blessures_legers=this.blessures_legers2020;ind++;break;
+    case '2021': blessures_legers=this.blessures_legers2021;ind++;break;
+    default: blessures_legers=this.blessures_legers2019;ind++;break;
+  }
+  document.getElementById("mymain").innerHTML.reload
+  document.getElementById('map').innerHTML = "<div id='map'></div>";
+
+  var container = L.DomUtil.get('map');
+if(container != null){
+container._leaflet_id = null;
+}
+
+
+                 
+
+
+
+  function getColor(d) {
+  return d > 15217
+    ? "#bd0026"
+    : d > 9008
+    ? "#f03b20"
+    : d > 5453
+    ? "#fd8d3c"
+    : d > 2140
+    ? "#fecc5c"
+    : "#ffffb2";
+  }
+
+  function Monstyle(feature) {
+    return {
+      weight: 2,
+      opacity: 1,
+      color: 'white',
+      dashArray: '3',
+      fillOpacity: 0.7,
+      fillColor: getColor(feature.properties.nbre)
+    };
+  }
+
+  function highlightFeature(e) {
+      var layer = e.target;
+
+      layer.setStyle({
+          weight: 5,
+          color: '#666',
+          dashArray: '',
+          fillOpacity: 0.7
+      });
+
+      if (!L.Browser.ie && !L.Browser.opera && !L.Browser.edge) {
+          layer.bringToFront();
+      }
+          info.update(layer.feature.properties);
+
+  }
+
+  function resetHighlight(e) {
+      geojson.resetStyle(e.target);
+          info.update();
+
+  }
+  function zoomToFeature(e) {
+    map.fitBounds(e.target.getBounds());
+}
+  function onEachFeature(feature, layer) {
+    layer.on({
+        mouseover: highlightFeature,
+        mouseout: resetHighlight,
+        click: zoomToFeature
+    });
+}
+var info = L.control();
+
+info.onAdd = function (map) {
+    this._div = L.DomUtil.create('div', 'info'); // create a div with a class "info"
+    this.update();
+    return this._div;
+};
+
+var map = L.map('map').setView([28.6, -4.3],5);  
+
+  
+  var test1= L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 23,
+    attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a>',
+    id: 'mapbox.light'
+  }).addTo(map);
+
+  var geojson = L.geoJson(blessures_legers, {
+  style: Monstyle,
+  onEachFeature: onEachFeature,
+  }).addTo(map);
+
+  // get color depending on nbre value
+
+  
+// method that we will use to update the control based on feature properties passed
+info.update = function (props) {
+   
+this._div.innerHTML = (props) ? '<h6 id="date"> <center> Carte de '+value+' </center>  Nom_Region : ' + props.NOMREGION + ' <br />Nombre de personnes blessées légèrement : ' + props.nbre :' <h6> <center >Carte de '+value+' </center>  Merci de mettre le curseur sur la region'
+
+};
+
+
+info.addTo(map);
+
+
+
+   
+var legend = L.control({position: 'bottomright'});
+
+legend.onAdd = function () {
+
+    var div = L.DomUtil.create('div', 'info legend'),
+        grades = [0, 2140, 5453, 9008, 15217];
+
+    div.innerHTML += '<h3 style=width="300" height="300">Légende</h3>';
+    for (var i = 0; i < grades.length; i++) {
+        div.innerHTML +=
+            '<svg width="20" height="20"> <rect width="20" height="20" style="fill:'+ getColor((grades[i] + 1) * 1) +';stroke-width:3;stroke:rgb(0,0,0)" /></svg> ' +
+            grades[i] + (grades[i + 1] ? ' – ' + grades[i + 1] + ' <br>' : '+');
+    }
+
+    return div;
+};
+
+legend.addTo(map);
+
+ }
+
+</script>
+
+  </body>
+</section> </center>
+
+
+    <section class="u-clearfix u-section-2" id="sec-98f0">
+      <div class="u-clearfix u-sheet u-sheet-1"><span class="u-file-icon u-icon u-icon-1"><img src="images/2353678.png" alt=""></span>
+        <p class="u-align-center u-custom-font u-font-georgia u-text u-text-custom-color-1 u-text-1"> Comment ça marche ?</p>
+        <ol class="u-align-left u-custom-font u-font-georgia u-text u-text-2">
+          <li> Sélectionner une
+date dans la case en bas de la carte (2019, 2020 ou 2021) <br /> N.B: Par défaut c'est l'année 2019.</li>
+          <li>Mettre le curseur
+sur la région souhaitée pour afficher le nombre de blessés légers.</li>
+          <li>Cliquer sur la région souhaitée pour zoomer.</li>
+        </ol>
+      </div>
+    </section>
+    
+    
+    <footer class="u-align-center u-black u-clearfix u-footer u-footer" id="sec-b117"><div class="u-clearfix u-sheet u-sheet-1">
+        <p class="u-small-text u-text u-text-variant u-text-1"> PROJET DE WEB MAPPING 2021-2022</p>
+      </div></footer>
+    <section class="u-backlink u-clearfix u-grey-80">
+      <a class="u-link" href="https://nicepage.com/templates" target="_blank">
+        <span>Templates</span>
+      </a>
+      <p class="u-text">
+        <span>created with</span>
+      </p>
+      <a class="u-link" href="" target="_blank">
+        <span>WYSIWYG Web Builder</span>
+      </a>. 
+    </section>
+  </body>
+</html>

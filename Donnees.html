@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html style="font-size: 16px;">
+  <head>
+<!-- AJOUTER CARTE 4 -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="shortcut icon" type="image/x-icon" href="docs/images/favicon.ico">
+    <link rel="stylesheet" href="css_4/leaflet.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="">
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+    <style type="text/css">
+            
+            #nav > ul > li a {
+             
+              padding: 0em;
+             
+            }
+
+    </style>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
+        .leaflet-container {
+            height: 400px;
+            width: 600px;
+            max-width: 100%;
+            max-height: 100%;
+        }
+    </style>
+
+    <style>
+        #map {
+            width: 800px;
+            height: 580px;
+            margin: auto;
+        }
+        
+        .info {
+            padding: 3px 3px;
+            font: 12px/15px Candara, Italic , sans-serif;
+            background:#6baed6;
+            background: rgba(255,255,255,0,8);
+            box-shadow: 2 2 15px rgba(0,0,0,0.2);
+            border-radius: 10px;
+        }
+        .info h4 {
+            margin: 2 2 40px;
+            color: #000000;
+        
+
+    </style>
+<!-- AJOUTER CARTE 4 -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content="GEOPORTAIL DES ACCIDENTS ROUTIERS AU MAROC (2019-2021)">
+    <meta name="description" content="">
+    <meta name="page_type" content="np-template-header-footer-from-plugin">
+    <title>Donnees</title>
+    <link rel="stylesheet" href="nicepage.css" media="screen">
+<link rel="stylesheet" href="Donnees.css" media="screen">
+    <script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>
+    <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script>
+    <meta name="generator" content="Nicepage 4.5.4, nicepage.com">
+    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
+    
+    
+    
+    <script type="application/ld+json">{
+		"@context": "http://schema.org",
+		"@type": "Organization",
+		"name": ""
+}</script>
+    <meta name="theme-color" content="#478ac9">
+    <meta property="og:title" content="Donnees">
+    <meta property="og:type" content="website">
+  </head>
+  <body class="u-body u-xl-mode"><header class=" u-header u-section-row-container" id="sec-abc8" data-animation-name="" data-animation-duration="0" data-animation-delay="0" data-animation-direction=""><div class="u-section-rows">
+        <div class="u-gradient u-section-row u-section-row-1" id="sec-abf3">
+          <div class="u-clearfix u-sheet u-sheet-1">
+            <img class="u-align-left u-image u-image-default u-preserve-proportions u-image-1" src="images/iav.jfif" alt="" data-image-width="175" data-image-height="168">
+            <img class="u-align-right u-image u-image-default u-image-2" src="images/esigt.jpg" alt="" data-image-width="525" data-image-height="523">
+            <h1 class="u-align-center u-text u-text-1">GEOPORTAIL DES ACCIDENTS ROUTIERS AU MAROC (2019-2021)</h1>
+          </div>
+          
+          
+          
+          
+          
+        </div>
+        <div class="u-black u-section-row u-section-row-2" data-animation-name="" data-animation-duration="0" data-animation-delay="0" data-animation-direction="" id="sec-a351">
+          <div class="u-align-left u-clearfix u-sheet u-valign-middle u-sheet-2">
+            <nav class="u-menu u-menu-dropdown u-offcanvas u-menu-1">
+              <div class="menu-collapse" style="font-size: 1.25rem; letter-spacing: 0px; font-weight: 700; text-transform: uppercase;">
+                <a class="u-button-style u-custom-active-border-color u-custom-border u-custom-border-color u-custom-borders u-custom-hover-border-color u-custom-left-right-menu-spacing u-custom-padding-bottom u-custom-text-active-color u-custom-text-color u-custom-text-hover-color u-custom-top-bottom-menu-spacing u-nav-link" href="#" style="padding: 0px; font-size: calc(1em + 0.5px);">
+                  <svg class="u-svg-link" viewBox="0 0 24 24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-f881"></use></svg>
+                  <svg class="u-svg-content" version="1.1" id="svg-f881" viewBox="0 0 16 16" x="0px" y="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"><g><rect y="1" width="16" height="2"></rect><rect y="7" width="16" height="2"></rect><rect y="13" width="16" height="2"></rect>
+</g></svg>
+                </a>
+              </div>
+              <div class="u-custom-menu u-nav-container">
+                <ul class="u-nav u-spacing-30 u-unstyled u-nav-1"><li class="u-nav-item"><a class="u-border-2 u-border-active-palette-1-base u-border-hover-palette-1-base u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-1-base u-text-white" href="Accueil.html" style="padding: 10px 0px;">Accueil</a>
+</li><li class="u-nav-item"><a class="u-border-2 u-border-active-palette-1-base u-border-hover-palette-1-base u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-1-base u-text-white" style="padding: 10px 0px;">Cartes</a><div class="u-nav-popup"><ul class="u-h-spacing-20 u-nav u-unstyled u-v-spacing-10 u-nav-2"><li class="u-nav-item"><a class="u-button-style u-nav-link u-white" href="Carte-des-décès.html">Carte des décès</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-white" href="Carte-des-blessés-graves.html">Carte des blessés graves</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-white" href="Carte-des-blessés-légers.html">Carte des blessés légers</a>
+</li></ul>
+</div>
+</li><li class="u-nav-item"><a class="u-border-2 u-border-active-palette-1-base u-border-hover-palette-1-base u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-1-base u-text-white" href="Donnees.html" style="padding: 10px 0px;">Donnees</a>
+</li><li class="u-nav-item"><a class="u-border-2 u-border-active-palette-1-base u-border-hover-palette-1-base u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-1-base u-text-white" href="Contact.html" style="padding: 10px 0px;">Contact</a>
+</li></ul>
+              </div>
+              <div class="u-custom-menu u-nav-container-collapse">
+                <div class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
+                  <div class="u-inner-container-layout u-sidenav-overflow">
+                    <div class="u-menu-close"></div>
+                    <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-3"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Accueil.html" style="padding: 10px 0px;">Accueil</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" style="padding: 10px 0px;">Cartes</a><div class="u-nav-popup"><ul class="u-h-spacing-20 u-nav u-unstyled u-v-spacing-10 u-nav-4"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Carte-des-décès.html">Carte des décès</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Carte-des-blessés-graves.html">Carte des blessés graves</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Carte-des-blessés-légers.html">Carte des blessés légers</a>
+</li></ul>
+</div>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Donnees.html" style="padding: 10px 0px;">Donnees</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Contact.html" style="padding: 10px 0px;">Contact</a>
+</li></ul>
+                  </div>
+                </div>
+                <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>
+              </div>
+            </nav>
+          </div>
+          
+          
+          
+          
+          
+        </div>
+      </div></header>
+    <section class="u-clearfix u-section-1" id="sec-a889">
+      <div class="u-clearfix u-sheet u-valign-middle u-sheet-1"><span class="u-file-icon u-icon u-icon-1"><img src="images/854901.png" alt=""></span>
+        <p class="u-align-center u-custom-font u-font-georgia u-text u-text-1"><span class="u-icon"></span>Carte des routes et de la répartition des hôpitaux et cliniques au Maroc  
+        </p>
+      </div>
+    </section>
+
+<!-- AJOUTER CARTE 4 -->
+<section>
+    <div id="map" class="leaflet-container leaflet-touch leaflet-retina leaflet-fade-anim leaflet-grab leaflet-touch-drag leaflet-touch-zoom" tabindex="0" style="position: relative;"><div class="leaflet-pane leaflet-map-pane" style="transform: translate3d(-107px, 0px, 0px);"><div class="leaflet-pane leaflet-tile-pane"><div class="leaflet-layer " style="z-index: 1; opacity: 1;"><div class="leaflet-tile-container leaflet-zoom-animated" style="z-index: 18; transform: translate3d(0px, 0px, 0px) scale(1);"><img alt="" role="presentation" src="https://api.mapbox.com/styles/v1/mapbox/light-v9/tiles/9/106/193?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw" class="leaflet-tile leaflet-tile-loaded" style="width: 512px; height: 512px; transform: translate3d(-49px, -482px, 0px); opacity: 1;"><img alt="" role="presentation" src="https://api.mapbox.com/styles/v1/mapbox/light-v9/tiles/9/107/193?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw" class="leaflet-tile leaflet-tile-loaded" style="width: 512px; height: 512px; transform: translate3d(463px, -482px, 0px); opacity: 1;"><img alt="" role="presentation" src="https://api.mapbox.com/styles/v1/mapbox/light-v9/tiles/9/106/194?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw" class="leaflet-tile leaflet-tile-loaded" style="width: 512px; height: 512px; transform: translate3d(-49px, 30px, 0px); opacity: 1;"><img alt="" role="presentation" src="https://api.mapbox.com/styles/v1/mapbox/light-v9/tiles/9/107/194?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw" class="leaflet-tile leaflet-tile-loaded" style="width: 512px; height: 512px; transform: translate3d(463px, 30px, 0px); opacity: 1;"></div></div></div><div class="leaflet-pane leaflet-shadow-pane"><img src="https://unpkg.com/leaflet@1.7.1/dist/images/marker-shadow.png" class="leaflet-marker-shadow leaflet-zoom-animated" alt="" style="margin-left: -12px; margin-top: -41px; width: 41px; height: 41px; transform: translate3d(278px, 314px, 0px);"><img src="https://unpkg.com/leaflet@1.7.1/dist/images/marker-shadow.png" class="leaflet-marker-shadow leaflet-zoom-animated" alt="" style="margin-left: -12px; margin-top: -41px; width: 41px; height: 41px; transform: translate3d(300px, 191px, 0px);"><img src="https://unpkg.com/leaflet@1.7.1/dist/images/marker-shadow.png" class="leaflet-marker-shadow leaflet-zoom-animated" alt="" style="margin-left: -12px; margin-top: -41px; width: 41px; height: 41px; transform: translate3d(438px, 200px, 0px);"><img src="https://unpkg.com/leaflet@1.7.1/dist/images/marker-shadow.png" class="leaflet-marker-shadow leaflet-zoom-animated" alt="" style="margin-left: -12px; margin-top: -41px; width: 41px; height: 41px; transform: translate3d(125px, 163px, 0px);"></div><div class="leaflet-pane leaflet-overlay-pane"></div><div class="leaflet-pane leaflet-marker-pane"><img src="https://unpkg.com/leaflet@1.7.1/dist/images/marker-icon-2x.png" class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive" alt="" tabindex="0" style="margin-left: -12px; margin-top: -41px; width: 25px; height: 41px; transform: translate3d(278px, 314px, 0px); z-index: 314;"><img src="https://unpkg.com/leaflet@1.7.1/dist/images/marker-icon-2x.png" class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive" alt="" tabindex="0" style="margin-left: -12px; margin-top: -41px; width: 25px; height: 41px; transform: translate3d(300px, 191px, 0px); z-index: 191;"><img src="https://unpkg.com/leaflet@1.7.1/dist/images/marker-icon-2x.png" class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive" alt="" tabindex="0" style="margin-left: -12px; margin-top: -41px; width: 25px; height: 41px; transform: translate3d(438px, 200px, 0px); z-index: 200;"><img src="https://unpkg.com/leaflet@1.7.1/dist/images/marker-icon-2x.png" class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive" alt="" tabindex="0" style="margin-left: -12px; margin-top: -41px; width: 25px; height: 41px; transform: translate3d(125px, 163px, 0px); z-index: 163;"></div><div class="leaflet-pane leaflet-tooltip-pane"></div><div class="leaflet-pane leaflet-popup-pane"></div><div class="leaflet-proxy leaflet-zoom-animated" style="transform: translate3d(54621px, 99498px, 0px) scale(512);"></div></div><div class="leaflet-control-container"><div class="leaflet-top leaflet-left"><div class="leaflet-control-zoom leaflet-bar leaflet-control"><a class="leaflet-control-zoom-in" href="#" title="Zoom in" role="button" aria-label="Zoom in">+</a><a class="leaflet-control-zoom-out" href="#" title="Zoom out" role="button" aria-label="Zoom out">−</a></div></div><div class="leaflet-top leaflet-right"><div class="leaflet-control-layers leaflet-control" aria-haspopup="true"><a class="leaflet-control-layers-toggle" href="#" title="Layers"></a><section class="leaflet-control-layers-list"><div class="leaflet-control-layers-base"><label><div><input type="radio" class="leaflet-control-layers-selector" name="leaflet-base-layers_45" checked="checked"><span> Grayscale</span></div></label><label><div><input type="radio" class="leaflet-control-layers-selector" name="leaflet-base-layers_45"><span> Streets</span></div></label></div><div class="leaflet-control-layers-separator"></div><div class="leaflet-control-layers-overlays"><label><div><input type="checkbox" class="leaflet-control-layers-selector" checked=""><span> hopitaux</span></div></label></div></section></div></div><div class="leaflet-bottom leaflet-left"></div><div class="leaflet-bottom leaflet-right"><div class="leaflet-control-attribution leaflet-control"><a href="https://leafletjs.com" title="A JS library for interactive maps">Leaflet</a> | Map data © <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery © <a href="https://www.mapbox.com/">Mapbox</a></div></div></div></div>
+    <body class="is-preload">
+
+        <div id="header" style="background-color: #d9d9d9" >
+                     
+                
+                <div id="header" style="background-color: #d9d9d9" >
+                        
+
+            <!-- Banner -->
+            <section class="wrapper style1" style="background-color:"#c7e9c0;>
+                   
+                </section>
+
+                </div>
+
+        </div>
+
+<script src="js_4/jquery.min.js"></script>
+            <script src="js_4/jquery.dropotron.min.js"></script>
+            <script src="js_4/browser.min.js"></script>
+            <script src="js_4/breakpoints.min.js"></script>
+            <script src="js_4/util.js"></script>
+            <script src="js_4/main.js"></script>
+<script type="text/javascript" src="js_4/blessures_legers_2019.js" id="button"></script>
+<script type="text/javascript" src="js_4/RNationales.js" id="button"></script>
+<script type="text/javascript" src="js_4/RProvinciales.js" id="button"></script>
+<script type="text/javascript" src="js_4/RRegionales.js" id="button"></script>
+<script type="text/javascript" src="js_4/Autoroutes.js" id="button"></script>
+<script type="text/javascript">
+    // Donnes Raster
+    var raster1 ='images/precipitation.png';
+    var bounds1 = [[36.7543264653, -18.0976554861],
+                        [20.3566891743, 0.0964174111]];
+    var a = L.imageOverlay(raster1, bounds1)  
+
+    // Donnees Vecteur Ponctuelles
+    var uniIcon = L.icon({
+                    iconUrl: 'images/hopital.png',
+
+                    iconSize:     [30, 30], // size of the icon
+                    iconAnchor:   [25, 20], // point of the icon which will correspond to marker's location
+                    popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
+                });
+
+    var hopitaux = L.layerGroup();
+    
+    var tang = L.marker([35.75, -5.73], {icon: uniIcon}).bindPopup('CHU Tanger').addTo(hopitaux);
+    var rab = L.marker([33.97, -6.85], {icon: uniIcon}).bindPopup('CHU Ibn Sina - Rabat').addTo(hopitaux);
+    var casa = L.marker([33.57, -7.59], {icon: uniIcon}).bindPopup('CHU Ibn Rochd - Casablanca').addTo(hopitaux);
+    var fes = L.marker([34.01, -5.00], {icon: uniIcon}).bindPopup('CHU Hassan II - Fès').addTo(hopitaux);
+    var ouj = L.marker([34.68, -1.90], {icon: uniIcon}).bindPopup('CHU Mohammed VI - Oujda').addTo(hopitaux);
+    var agad = L.marker([30.41, -9.57], {icon: uniIcon}).bindPopup('CHU Agadir').addTo(hopitaux);
+    var laay = L.marker([27.15, -13.19], {icon: uniIcon}).bindPopup('CHU Laayoune').addTo(hopitaux);
+
+    // Donnees Vecteur Zonales
+    var regions = L.geoJson(blessures_legers, {style : {"color":'#99d8c9'}});
+    // Donnees Vecteur Lineaires
+    var auto = L.geoJson(highway, {style : {"color":'blue',"weight":6,"opacity":0.8}});
+    var nat = L.geoJson(nationale, {style : {"color":'red',"weight":4,"opacity":0.8}});
+    var reg = L.geoJson(regionale, {style : {"color":'orange',"weight":3,"opacity":0.8}});
+    var prov = L.geoJson(provinciale, {style : {"color":'yellow',"weight":2,"opacity":0.8}});
+
+    // Geoportail 
+    var basemap = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 23,
+    attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a>',
+    id: 'mapbox.light'}) ; 
+
+    var map = L.map('map', {
+        center: [28.6, -4.3],
+        zoom: 5,
+        layers: [basemap, regions, auto, nat, reg, prov, hopitaux, a ]
+    });
+    var baseMaps = {
+    "<span style='color: red'>Carte</span>": basemap };
+
+    var overlayMaps = {
+    "Raster des précipitation moyennes en janvier<br /> entre 1970-2000 au Maroc" : a,
+    "Hopitaux" : hopitaux , 
+    "Autoroutes" : auto,
+    "Routes Nationales" : nat,
+    "Routes Régionales" : reg,
+    "Routes Provinciales" : prov,
+    "Régions": regions, 
+    };
+    
+    L.control.layers(baseMaps, overlayMaps).addTo(map);      
+    // Légende Permanente     
+    var raster2 ='images/legende.png';
+    var bounds2 = [[28.092391, 4.171155],
+                        [21.802860, 10.498473]];
+    var b = L.imageOverlay(raster2, bounds2).addTo(map) ; 
+
+</script>
+<!-- AJOUTER CARTE 4 -->
+
+    <section class="u-clearfix u-section-2" id="sec-98f0">
+      <div class="u-clearfix u-sheet u-sheet-1"><span class="u-file-icon u-icon u-icon-1"><img src="images/2353678.png" alt=""></span>
+        <p class="u-align-center u-custom-font u-font-georgia u-text u-text-custom-color-1 u-text-1"> Comment ça marche ?</p>
+        <ol class="u-align-left u-custom-font u-font-georgia u-text u-text-2">
+          <li>Aller vers l'icône dans le coin supérieur droit de la carte pour cocher/décocher les éléments à afficher/cacher respectivement.</li>
+          <li>Pour contrôler l'ordre de l'affichage des couches, veuillez les cocher en ordre tel que la couche que vous voulez au 1er plan soit celle cochée la dernière.</li>
+          <li>Zoomer/dézoomer a l’aide de l’outil dans le coin supérieur gauche de la carte.&nbsp;<br>
+          </li>
+        </ol>
+      </div>
+    </section>
+    
+    
+    <footer class="u-align-center u-black u-clearfix u-footer u-footer" id="sec-b117"><div class="u-clearfix u-sheet u-sheet-1">
+        <p class="u-small-text u-text u-text-variant u-text-1"> PROJET DE WEB MAPPING 2021-2022</p>
+      </div></footer>
+    <section class="u-backlink u-clearfix u-grey-80">
+      <a class="u-link" href="https://nicepage.com/html-templates" target="_blank">
+        <span>HTML Template</span>
+      </a>
+      <p class="u-text">
+        <span>created with</span>
+      </p>
+      <a class="u-link" href="https://nicepage.com/website-builder" target="_blank">
+        <span>Best Website Builder</span>
+      </a>. 
+    </section>
+  </body>
+</html>
